@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1>Yessen Zhumagali</h1>
+    <h2>Web Technologies FrontEnd</h2>
+    <h3>About me</h3>
+    <p>I am 18 years old. <br> I study at Astana IT University.<br> My favourite dish is Beshbarmak</p>
+
+    <ol>
+        <li>Sleeping</li>
+        <li>Football</li>
+        <li>Basketball</li>
+    </ol>
+
+    <ul>
+        <li><a href="https://Monkeytype.com">Monkeytype.com</a></li>
+        <li><a href="https://du.astanait.edu.kz">Digital University Aitu</a></li>
+        <li><a href="https://youtube.com">YouTube</a></li>
+    </ul>
+
+    <a href="https://google.com">Google</a><br>
+    <a href="https://Amazon.com">Amazon Shop</a><br>
+    <img src="15.jpg" height="300px" alt="Yessen Zhumagali">
+    <div class="container"></div>
+
+    <hr>
+
+    <button type="button" onclick="clicking()" class="button1" style="background-color: red; color: white">Count: 0</button>
+
+    <h3>Weekly Class Schedule</h3>
+    <table border="1">
+        <tr>
+            <th>Subject</th>
+            <th>Day</th>
+            <th>Time</th>
+        </tr>
+        <tr>
+            <td>Web Technologies</td>
+            <td>Monday</td>
+            <td>10:00 - 11:30</td>
+        </tr>
+        <tr>
+            <td>Mathematics</td>
+            <td>Wednesday</td>
+            <td>12:00 - 13:30</td>
+        </tr>
+        <tr>
+            <td>Programming</td>
+            <td>Friday</td>
+            <td>14:00 - 15:30</td>
+        </tr>
+    </table>
+
+    <h3>Two-Column Layout</h3>
+    <table border="1" width="100%">
+        <tr>
+            <td width="30%">
+                <aside>
+                    <h4>Menu</h4>
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Contact</li>
+                    </ul>
+                </aside>
+            </td>
+            <td width="70%">
+                <main>
+                    <h4>Main Content</h4>
+                    <p>This is the main content area.</p>
+                </main>
+            </td>
+        </tr>
+    </table>
+
+    <h3>My Mood Today</h3>
+    <p>I feel happy 😊, a little tired 😴, but also excited 🎉 about learning HTML!</p>
+
+    <h3>Form</h3>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="color">Favorite Color:</label>
+        <input type="color" id="color" name="color"><br><br>
+
+        <button type="submit" onclick="submitting()" style="background-color: blue; color: white">Submit</button>
+    </form>
+
+    <script>
+        let count = 0;
+        let button1 = document.getElementsByClassName('button1')[0];
+        button1.textContent = "Count: " + count;
+
+        function clicking() {
+            count++;
+            button1.textContent = "Count: " + count;
+        }
+    </script>
+</body>
+</html>
